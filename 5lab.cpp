@@ -7,7 +7,9 @@ int main()
 {
 setlocale(LC_ALL, "Russian");
 int A[N] = { 12, 6, 8, 15, -2, 4, 9, -3, 14, 7 };						// Ввод массива
-int i, nMin, index;
+int i;
+int nMin;
+int index;
 
 {																	// поиск минимального значения
 	nMin = A[0];
@@ -22,8 +24,10 @@ int i, nMin, index;
 }
 cout << "Минимальный элемент: " << index << endl;
 
-int neg123, neg234;														// поиск двух отрицательных значений	
-int idx123, idx234;
+int neg123;                      // первое отрицательное! Я 
+int neg234;														// поиск двух отрицательных значений	
+int idx123;
+int idx234;
 for (int i = 0; i < N; i++)											// поиск первого отриц. значения
 {
 	if (A[i] < 0)
